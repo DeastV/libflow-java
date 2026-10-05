@@ -1,0 +1,25 @@
+# Compiled Java class files
+*.class
+bin/
+build/
+*.jar
+*.war
+*.ear
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Persistence test data files
+saved*
+*.dat
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.DS_Store
+*~
