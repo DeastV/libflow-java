@@ -88,17 +88,19 @@ make run
 make clean
 ```
 
-### Initial Data Import
-To start the application with a predefined dataset, provide the import property:
+### Optional Data Ingestion
+The application supports populating initial catalog and user records from an external formatted text file at launch:
 ```bash
-java -cp bin -Dimport=data.import bci.app.App
+java -cp bin -Dimport=<path-to-file> bci.app.App
 ```
 
 ---
 
-## Authors
+## Authors & Acknowledgments
 
 * **David Vasques** ([@DeastV](https://github.com/DeastV))
 * **Bruno Fontenele** ([@brunomatos2505](https://github.com/brunomatos2505))
 
-*Instituto Superior Técnico — Universidade de Lisboa (2024/2025)*
+Collaborative group coursework developed for Programação com Objetos (PO) at Instituto Superior Técnico, Universidade de Lisboa.
+
+*Course-Provided Resources:* The terminal user interface library (`pt/tecnico/uilib`) was provided by the PO teaching staff. The MIT License applies to the domain core (`bci.core`), business rules, notification engine, design patterns, and application menu drivers (`bci.app`).
