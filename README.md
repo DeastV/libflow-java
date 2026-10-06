@@ -1,9 +1,6 @@
 # LibFlow — Object-Oriented Library Management System in Java
 
 [![Language](https://img.shields.io/badge/Language-Java%2017%2B-ED8B00.svg?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![Paradigm](https://img.shields.io/badge/Paradigm-OOP%20%26%20SOLID-blue.svg)]()
-[![Patterns](https://img.shields.io/badge/Patterns-Strategy%20%7C%20Observer%20%7C%20State-purple.svg)]()
-[![Persistence](https://img.shields.io/badge/Persistence-Java%20Serialization-orange.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An object-oriented library management application developed in Java. The system implements a rich domain model managing catalog inventory (Books, DVDs), user behavioral progression, dynamic loan validation rules, automated stock notifications, and binary state persistence.
@@ -96,11 +93,14 @@ java -cp bin -Dimport=<path-to-file> bci.app.App
 
 ---
 
-## Authors & Acknowledgments
+## Known Limitations
 
-* **David Vasques** ([@DeastV](https://github.com/DeastV))
-* **Bruno Fontenele** ([@brunomatos2505](https://github.com/brunomatos2505))
+* **Binary Serialization Coupling:** System state persistence relies on native Java Object Serialization, requiring binary class compatibility and preventing external query inspection without deserialization.
+* **In-Memory Collection Traversal:** Catalog search and user query operations evaluate through in-memory collection streams rather than persistent indexing structures.
 
-Collaborative group coursework developed for Programação com Objetos (PO) at Instituto Superior Técnico, Universidade de Lisboa.
+---
 
-*Course-Provided Resources:* The terminal user interface library (`pt/tecnico/uilib`) was provided by the PO teaching staff. The MIT License applies to the domain core (`bci.core`), business rules, notification engine, design patterns, and application menu drivers (`bci.app`).
+## Credits
+
+* **David Vasques** ([@DeastV](https://github.com/DeastV)), **Bruno Fontenele** ([@brunomatos2505](https://github.com/brunomatos2505))
+* Collaborative group coursework developed for Programação com Objetos (PO) at Instituto Superior Técnico, Universidade de Lisboa. Terminal dialog framework (`pt/tecnico/uilib`) provided by the teaching staff.
